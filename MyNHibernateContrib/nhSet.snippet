@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Strongly-typed NHibernate ISet</Title>
+			<Shortcut>nhset</Shortcut>
+			<Author>Andrew Arnott</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+			<Description>Inserts the four collection attributes required for a strongly-typed set persistable with NHibernate.</Description>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[
+		private ISet $privateSet$Set;
+		/// <summary>
+		/// The NHibernate <see cref="ISet"/> that backs the <see cref="$publicTwoWay$"/> collection.
+		/// </summary>
+		protected ISet $setAccessor$Set
+		{
+			get
+			{
+				if ($privateSet$Set == null) $privateSet$Set = new Iesi.Collections.HashedSet();
+				return $privateSet$Set;
+			}
+			set
+			{
+				$privateSet$Set = value;
+				$privateTwoWay$ = null;
+			}
+		}
+
+		private TwoWaySet<$child$, $parent$> $privateTwoWay$;
+		/// <summary>
+		/// A set of $publicTwoWay$.
+		/// </summary>
+		public TwoWaySet<$child$, $parent$> $publicTwoWay$
+		{
+			get
+			{
+				if ($privateTwoWay$ == null)
+					$privateTwoWay$ = new TwoWaySet<$child$, $parent$>(this, $setAccessor$Set);
+				return $privateTwoWay$;
+			}
+		}
+				]]>
+			</Code>
+			<Declarations>
+				<Literal Editable="true">
+					<ID>privateSet</ID>
+					<ToolTip>The name of the private set variable.</ToolTip>
+					<Default>apples</Default>
+				</Literal>
+				<Literal Editable="true">
+					<ID>setAccessor</ID>
+					<ToolTip>The name of the protected accessor to the private set variable.</ToolTip>
+					<Default>Apples</Default>
+				</Literal>
+				<Literal Editable="true">
+					<ID>privateTwoWay</ID>
+					<ToolTip>The name of the private two-way collection variable.</ToolTip>
+					<Default>apples</Default>
+				</Literal>
+				<Literal Editable="true">
+					<ID>publicTwoWay</ID>
+					<ToolTip>The public name of your strongly-typed set.</ToolTip>
+					<Default>Apples</Default>
+				</Literal>
+				<Literal Editable="true">
+					<ID>child</ID>
+					<ToolTip>The type of the collection member.</ToolTip>
+					<Default>Apple</Default>
+				</Literal>
+				<Literal Editable="true">
+					<ID>parent</ID>
+					<ToolTip>The type of the collection-containing class.</ToolTip>
+					<Default>Tree</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

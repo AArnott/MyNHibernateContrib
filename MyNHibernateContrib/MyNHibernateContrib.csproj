@@ -1,0 +1,79 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BE3C7DCA-9F1C-4592-B7D4-85A074B69533}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyNHibernateContrib</RootNamespace>
+    <AssemblyName>MyNHibernateContrib</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>fhss.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\MyNHibernateContrib.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\MyNHibernateContrib.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Iesi.Collections, Version=1.0.0.1, Culture=neutral, PublicKeyToken=154fdcb44c4484fc">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resources\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.9.0, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resources\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=0.8.4.0, Culture=neutral, PublicKeyToken=154fdcb44c4484fc">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resources\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbMgr.cs" />
+    <Compile Include="GenericCollections\IDictionaryWrapper.cs" />
+    <Compile Include="GenericCollections\IEnumerableDictionaryWrapper.cs" />
+    <Compile Include="GenericCollections\IEnumerableWrapper.cs" />
+    <Compile Include="GenericCollections\IListWrapper.cs" />
+    <Compile Include="GenericCollections\ISetWrapper.cs" />
+    <Compile Include="IDbMgr.cs" />
+    <Compile Include="Nullables\GenericNullableType.cs" />
+    <Compile Include="Nullables\NullablesTypes.cs" />
+    <Compile Include="Nullables\NullableTypesType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TwoWayCollections\IReferenceableParentDictionary.cs" />
+    <Compile Include="TwoWayCollections\IManyToManyNode.cs" />
+    <Compile Include="TwoWayCollections\IParentReferencingNode.cs" />
+    <Compile Include="TwoWayCollections\IReferenceableParent.cs" />
+    <Compile Include="TwoWayCollections\ITwoWayCollection.cs" />
+    <Compile Include="TwoWayCollections\ITwoWayDictionary.cs" />
+    <Compile Include="TwoWayCollections\ManyToManySet.cs" />
+    <Compile Include="TwoWayCollections\TwoWayDictionary.cs" />
+    <Compile Include="TwoWayCollections\TwoWayList.cs" />
+    <Compile Include="TwoWayCollections\TwoWaySet.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fhss.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

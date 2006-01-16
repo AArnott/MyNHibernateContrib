@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" default-cascade="all-delete-orphan">
+	<class name="ExampleLibrary.Tree, ExampleLibrary" table="tree" lazy="true">
+		<cache usage="read-write"/>
+		<id name="Id" column="treeId" unsaved-value="0">
+			<generator class="native"/>
+		</id>
+
+		<property name="SeedCount" type="MyNHibernateContrib.Nullables.Int32, MyNHibernateContrib"/>
+
+		<map name="ApplesSet" lazy="true">
+			<cache usage="read-write"/>
+			<key column="treeId"/>
+			<one-to-many class="Apple, ExampleLibrary"/>
+		</map>
+
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNHibernateContrib", "MyNHibernateContrib\MyNHibernateContrib.csproj", "{BE3C7DCA-9F1C-4592-B7D4-85A074B69533}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNHibernateContribTests", "MyNHibernateContribTests\MyNHibernateContribTests.csproj", "{ADD1B0D2-830D-4ED2-AD1B-25CAC216352B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7D368B9B-22EB-4A39-81D7-16738DA3E0B2}"
+	ProjectSection(SolutionItems) = preProject
+		localtestrun.testrunconfig = localtestrun.testrunconfig
+		MyNHibernateContrib.vsmdi = MyNHibernateContrib.vsmdi
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "c:\...\ExampleWeb\", "ExampleWeb\", "{5E973265-9D4C-4BCD-8AA8-B763AF9FA7D4}"
+	ProjectSection(WebsiteProperties) = preProject
+		ProjectReferences = "{BE3C7DCA-9F1C-4592-B7D4-85A074B69533}|MyNHibernateContrib.dll;{0718BD9F-FCA9-483B-B84E-85802BCF59F1}|ExampleLibrary.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/ExampleWeb"
+		Debug.AspNetCompiler.PhysicalPath = "ExampleWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ExampleWeb\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ExampleWeb"
+		Release.AspNetCompiler.PhysicalPath = "ExampleWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ExampleWeb\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "3551"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleLibrary", "ExampleLibrary\ExampleLibrary.csproj", "{0718BD9F-FCA9-483B-B84E-85802BCF59F1}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = MyNHibernateContrib.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE3C7DCA-9F1C-4592-B7D4-85A074B69533}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{BE3C7DCA-9F1C-4592-B7D4-85A074B69533}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE3C7DCA-9F1C-4592-B7D4-85A074B69533}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE3C7DCA-9F1C-4592-B7D4-85A074B69533}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{BE3C7DCA-9F1C-4592-B7D4-85A074B69533}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{BE3C7DCA-9F1C-4592-B7D4-85A074B69533}.Release|.NET.ActiveCfg = Release|Any CPU
+		{BE3C7DCA-9F1C-4592-B7D4-85A074B69533}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE3C7DCA-9F1C-4592-B7D4-85A074B69533}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE3C7DCA-9F1C-4592-B7D4-85A074B69533}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{BE3C7DCA-9F1C-4592-B7D4-85A074B69533}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{ADD1B0D2-830D-4ED2-AD1B-25CAC216352B}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{ADD1B0D2-830D-4ED2-AD1B-25CAC216352B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADD1B0D2-830D-4ED2-AD1B-25CAC216352B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADD1B0D2-830D-4ED2-AD1B-25CAC216352B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{ADD1B0D2-830D-4ED2-AD1B-25CAC216352B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{ADD1B0D2-830D-4ED2-AD1B-25CAC216352B}.Release|.NET.ActiveCfg = Release|Any CPU
+		{ADD1B0D2-830D-4ED2-AD1B-25CAC216352B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADD1B0D2-830D-4ED2-AD1B-25CAC216352B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADD1B0D2-830D-4ED2-AD1B-25CAC216352B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{ADD1B0D2-830D-4ED2-AD1B-25CAC216352B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5E973265-9D4C-4BCD-8AA8-B763AF9FA7D4}.Debug|.NET.ActiveCfg = Debug|.NET
+		{5E973265-9D4C-4BCD-8AA8-B763AF9FA7D4}.Debug|.NET.Build.0 = Debug|.NET
+		{5E973265-9D4C-4BCD-8AA8-B763AF9FA7D4}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{5E973265-9D4C-4BCD-8AA8-B763AF9FA7D4}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{5E973265-9D4C-4BCD-8AA8-B763AF9FA7D4}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{5E973265-9D4C-4BCD-8AA8-B763AF9FA7D4}.Release|.NET.ActiveCfg = Debug|.NET
+		{5E973265-9D4C-4BCD-8AA8-B763AF9FA7D4}.Release|.NET.Build.0 = Debug|.NET
+		{5E973265-9D4C-4BCD-8AA8-B763AF9FA7D4}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{5E973265-9D4C-4BCD-8AA8-B763AF9FA7D4}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{5E973265-9D4C-4BCD-8AA8-B763AF9FA7D4}.Release|Mixed Platforms.Build.0 = Debug|.NET
+		{0718BD9F-FCA9-483B-B84E-85802BCF59F1}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{0718BD9F-FCA9-483B-B84E-85802BCF59F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0718BD9F-FCA9-483B-B84E-85802BCF59F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0718BD9F-FCA9-483B-B84E-85802BCF59F1}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0718BD9F-FCA9-483B-B84E-85802BCF59F1}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0718BD9F-FCA9-483B-B84E-85802BCF59F1}.Release|.NET.ActiveCfg = Release|Any CPU
+		{0718BD9F-FCA9-483B-B84E-85802BCF59F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0718BD9F-FCA9-483B-B84E-85802BCF59F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0718BD9F-FCA9-483B-B84E-85802BCF59F1}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0718BD9F-FCA9-483B-B84E-85802BCF59F1}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
