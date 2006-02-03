@@ -237,19 +237,31 @@ namespace MyNHibernateContrib
 		}
 		#endregion
 
-		public void Save(object o)
+		public static void Save(object o)
 		{
 			Session.SaveOrUpdate(o);
 		}
+		void IDbMgr.Save(object o)
+		{
+			DbMgr.Save(o);
+		}
 
-		public void SaveNew(object o)
+		public static void SaveNew(object o)
 		{
 			Session.Save(o);
 		}
+		void IDbMgr.SaveNew(object o)
+		{
+			DbMgr.SaveNew(o);
+		}
 
-		public void Delete(object o)
+		public static void Delete(object o)
 		{
 			Session.Delete(o);
+		}
+		void IDbMgr.Delete(object o)
+		{
+			DbMgr.Delete(o);
 		}
 
 		public static void ClearDatabase()
