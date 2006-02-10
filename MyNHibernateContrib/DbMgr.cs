@@ -102,6 +102,15 @@ namespace MyNHibernateContrib
 			isConstructingDatabase = true;
 			try
 			{
+				// Clear the database before destroying it (if it exists)
+				// so that the second-level cache (if any) is cleared also.
+				// See issue http://jira.nhibernate.org/browse/NH-342
+				ClearDatabase();
+				EndSession();
+			}
+			catch { } // ignore errors, as it's probably just that the database didn't exist before.
+			try
+			{
 				new SchemaExport(Config).Create(true, true);
 				OnInitializeData();
 				RecentlyConstructed = true;
