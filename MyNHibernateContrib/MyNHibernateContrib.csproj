@@ -57,6 +57,7 @@
     <Compile Include="GenericCollections\IListWrapper.cs" />
     <Compile Include="GenericCollections\ISetWrapper.cs" />
     <Compile Include="IDbMgr.cs" />
+    <Compile Include="Nullables\GenericNullableEnumType.cs" />
     <Compile Include="Nullables\GenericNullableType.cs" />
     <Compile Include="Nullables\NullablesTypes.cs" />
     <Compile Include="Nullables\NullableTypesType.cs" />
