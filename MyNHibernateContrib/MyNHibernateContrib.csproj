@@ -10,7 +10,7 @@
     <RootNamespace>MyNHibernateContrib</RootNamespace>
     <AssemblyName>MyNHibernateContrib</AssemblyName>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>NerdBank.snk.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>NerdBank-public.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -74,7 +74,7 @@
     <Compile Include="TwoWayCollections\TwoWaySet.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="NerdBank.snk.pfx" />
+    <None Include="NerdBank-public.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
