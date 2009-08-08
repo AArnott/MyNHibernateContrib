@@ -1,18 +1,19 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNHibernateContrib", "MyNHibernateContrib\MyNHibernateContrib.csproj", "{BE3C7DCA-9F1C-4592-B7D4-85A074B69533}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNHibernateContribTests", "MyNHibernateContribTests\MyNHibernateContribTests.csproj", "{ADD1B0D2-830D-4ED2-AD1B-25CAC216352B}"
-EndProject
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7D368B9B-22EB-4A39-81D7-16738DA3E0B2}"
 	ProjectSection(SolutionItems) = preProject
 		localtestrun.testrunconfig = localtestrun.testrunconfig
 		MyNHibernateContrib.vsmdi = MyNHibernateContrib.vsmdi
 	EndProjectSection
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "c:\...\ExampleWeb\", "ExampleWeb\", "{5E973265-9D4C-4BCD-8AA8-B763AF9FA7D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNHibernateContrib", "MyNHibernateContrib\MyNHibernateContrib.csproj", "{BE3C7DCA-9F1C-4592-B7D4-85A074B69533}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNHibernateContribTests", "MyNHibernateContribTests\MyNHibernateContribTests.csproj", "{ADD1B0D2-830D-4ED2-AD1B-25CAC216352B}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ExampleWeb", "ExampleWeb", "{5E973265-9D4C-4BCD-8AA8-B763AF9FA7D4}"
 	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
 		ProjectReferences = "{BE3C7DCA-9F1C-4592-B7D4-85A074B69533}|MyNHibernateContrib.dll;{0718BD9F-FCA9-483B-B84E-85802BCF59F1}|ExampleLibrary.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/ExampleWeb"
 		Debug.AspNetCompiler.PhysicalPath = "ExampleWeb\"
